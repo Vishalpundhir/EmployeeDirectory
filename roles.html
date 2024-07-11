@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles</title>
+    <link rel="stylesheet" href="./Assets/Css/roles.css" />
+    <link rel="stylesheet" href="./Assets/Css/common.css" />
+        <script src="./Assets/Js/roles.js" async>
+        </script>
+          <script src="./Assets/Js/common.js" async>
+        </script>
+    </head>
+
+<body>
+
+
+    <div class="main-container">
+
+        <!-- main side bar -->
+        <div class="side-bar" id="side-bar">
+
+             <!-- Tezo logo -->
+            <div class="logo-img-div" id="logo-img-div"><img class="logo-img" src="./Assets/Images/TezoLogo.png"></div>
+            
+
+             <!-- All section -->
+            <div class="all-section" id="all-section">
+                <div class="side-bar-main-headings">ALL</div>
+                <div class="emp-main">
+                    <div class="dashboard">
+                        <div><img class="all-img" src="./Assets/Images/Dashboard.svg"></div>
+                        <div class="all-heading">Dashboard</div>
+                    </div>
+                    <div class="red-side-bar red-side-bar-shifted "></div>
+                </div>
+                <a class="link" href="index.html"><div class="emp-main">
+                    <div class="eployees general">
+                        <div><img class="all-img" src="./Assets/Images/team_svgrepo.com.svg"></div>
+                        <div class="all-heading all-heading-employee">Employees</div>
+                    </div>
+                    <div class="red-side-bar"></div>
+                </div></a>
+            </div>
+
+             <!-- Department section -->
+            <div class="departments" id="departments">
+                <div class="side-bar-main-headings">ROLE/USER MANAGEMENT</div>
+                <div class="roles-side-bar">
+                    <div class="dashboard-1 ">
+                        <div><img class="all-img" src="./Assets/Images/Roles.svg"></div>
+                        <div  class="all-heading all-heading-highlighted">Roles</div>
+                        <div><img class="all-arrow all-arrow-up" src="./Assets/Images/arrow.png"> </div>
+                    </div>
+                    <div class="red-side-bar red-side-bar-fixed"></div>
+                </div>
+                <div class="emp-main">
+                    <div class="dashboard general">
+                        <div><img class="all-img" src="./Assets/Images/assign user.svg"></div>
+                        <div class="all-heading">Access rights</div>
+                        <div><img  class="all-arrow" src="./Assets/Images/arrow.png"> </div>
+                    </div>
+                    <div class="red-side-bar"></div>
+                </div>
+            </div>
+
+             <!-- Hidden Side bar-->
+            
+
+              <!-- Bottom box of side bar for Dismiss and Accept -->
+            <div class="box" id="box" >
+                <div class="box-main-head">Install new update 2.3.1A</div>
+                <div class="box-head-desc">Allow to launch the new update</div>
+                <div class="box-head-desc">for the AD Application</div>
+                <button class="btn-dismiss">Dismiss</button>
+                <button class="btn-accept">Accept</button>
+            </div>
+        </div>
+
+        <button onclick="hideSideBar('role')" class="handle-img-box" id="handle-img-box"> <img class="handle-img"
+            id="handle-img" src="./Assets/Images/handle.png"></button>
+
+            <div class="hidden-side-bar d-none" id="new-bar" >
+                <div><img class="logo-img-new" src="./Assets/Images/TezoLogoUpdated.png" alt="Tezo_logo"></div>
+                <div><img class="all-img-new" src="./Assets/Images/Dashboard.svg"></div>
+                <div><a href="index.html"><img class="all-img-new" src="./Assets/Images/team_svgrepo.com.svg"></a></div>
+                <div class="container">
+                    <div><a href="roleDetailes.html"><img class="all-img-new" src="./Assets/Images/Roles.svg"></a></div>
+                    <div  class="red-bar-common d-block"></div>
+                </div>
+                <div><img class="all-img-new" src="./Assets/Images/assign user.svg"></div>
+            </div>
+
+          <!-- Search bar  -->
+           <!-- the wrap is the conatiner to wrap remaing part -->
+        <div class="hide-and-open" id="wrap">
+        <div class="search-bar " id="search-bar">
+            <div class="search-icon"><img class="search-icon-img" src="./Assets/Images/bx-search.png"></div>
+            <div class="search-heading">Search</div>
+            <div><img class="search-bar-icons" src="./Assets/Images/IconButton.png"></div>
+            <div><img class="search-bar-icons" src="./Assets/Images/icon1.png"></div>
+            <div><img class="search-bar-icons" src="./Assets/Images/icon2.png"></div>
+            <div><img class="search-bar-icons" src="./Assets/Images/icon3.png"></div>
+            <div class="user-login">
+                <div><img class="user-img" src="./Assets/Images/John-Abraham-2.png"></div>
+                <div class="admin-name">
+                    <div class="admin">John Abraham</div>
+                    <div class="admin-title">Admin</div>
+                </div>
+                <div>
+                    <select class="arw-dwn">
+                    </select>
+                </div>
+            </div>
+        </div>
+
+       
+         <!-- Employees Section -->
+        <div class="employess-section d-block" id="employess-section">
+            <div class="employess-section-up">
+                <div class="employee-desc">
+                    <div class="employee-desc-heading"> Roles</div>
+                    <div class="employee-desc-desc">All the roles are configured here.</div>
+                </div>
+                <div> <button class="add-employee-btn" onclick="toggleForm()"><i class="fa-solid fa-plus"></i> ADD
+                        ROLE</button></div>
+            </div>
+        </div>
+
+         <!-- Filter Section -->
+        <div class="filter-section flex " id="filter-section">
+            <div class="flex">
+                <div> <button class="filter-box">Filter <img class="filter-bars" src="./Assets/Images/bars-filter.svg"></div>
+                </button>
+                
+
+                    <div class="custom-select" id="locationDropdown" onclick="toggleOptions('locationOptions')">
+                        <span class="selected-text" id="locationDropdownText">Location: 0 selected</span>
+                        <div class="options" id="locationOptions"></div>
+                    </div>
+
+                    <div class="custom-select" id="departmentDropdown" onclick="toggleOptions('departmentOptions')">
+                        <span class="selected-text" id="departmentDropdownText">Department: 0 selected</span>
+                        <div class="options" id="departmentOptions"></div>
+                    </div>
+
+            </div>
+            <div class="flex filter-btn" >
+                <div><button id="reset-Btn" onclick="resetFilters()" class="reset-box" disabled>Reset</button></div>
+                <div><button id="apply-Btn" onclick="applyFilters()" class="apply-box" disabled>Apply</button></div>
+            </div>
+        </div>
+
+
+         <!-- Details of Role -->
+
+        <div class="form d-none" id="form" >
+            <h3>Create New Role</h3>
+            <div  class="flex add-role-description">
+                <div>
+                    <label class="all-label" for="newRoleName">Role Name</label><br>
+                    <input type="text" id="role-name" class="all-input" required>
+                </div>
+                <div>
+                    <label class="all-label" for="newDepartmentName">Department</label><br>
+                    <input type="text" id="department" class="all-input" required>
+                </div>
+            </div>
+            <div  class="role-description">
+                <label class="all-label" for="newEmployeeEmail">Description</label><br>
+                <textarea class="role-textarea"></textarea>
+            </div>
+            <div  class="role-location">
+                <label class="all-label" for="newEmployeeLocation">Location:</label><br>
+                <input class="all-input2" type="text" id="location">
+            </div>
+
+            <div class="role-employees"><label class="all-label">Assign Employees</label></div><br>
+            <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                    <select>
+                        <option>Select Employees</option>
+                    </select>
+                    <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes" class="checkboxes">
+                </div>
+            </div>
+            
+           
+
+            <button class="cancel-btn" onclick="closePage()">Cancel</button>
+            <button class="add-btn" onclick="SubmitData()">Ok</button>
+
+        </div>
+        
+        <div class="emp-roles flex" id="emp-roles">
+            <!-- Dynamic addition of roles here -->
+        </div>
+        
+        
+        </div>
+
+
+    </div>
+
+
+
+
+ 
+</body>
+
+</html>
