@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Details</title>
+    <link rel="stylesheet" href="../Assets/Css/roleDetails.css" />
+    <link rel="stylesheet" href="../Assets/Css/common.css" />
+<script src="../Assets/Js/common.js" async>
+</script>
+</head>
+<body>
+
+
+    <div class="main-container">
+       
+         <!-- main side bar -->
+        <div class="side-bar" id="side-bar">
+
+            <div class="logo-img-div" id="logo-img-div"><img class="logo-img" src="../Assets/Images/TezoLogo.png"></div>
+            
+            <div class="all-section" id="all-section">
+                <div class="side-bar-main-headings">ALL</div>
+                
+                <div class="emp-main">
+                    <div class="dashboard">
+                        <div><img class="all-img" src="../Assets/Images/Dashboard.svg"></div>
+                        <div class="all-heading">Dashboard</div>
+                    </div>
+                    <div  class="red-side-bar red-side-bar-diff"></div>
+                </div>
+                <a class="link" href="index.html"><div class="emp-main">
+                        <div class="eployees general">
+                            <div><img class="all-img" src="../Assets/Images/team_svgrepo.com.svg"></div>
+                            <div class="all-heading all-heading-employee">Employees</div>
+                        </div>
+                        <div class="red-side-bar"></div>
+                    </div></a>
+                
+                
+            
+            </div>
+
+            <div class="departments"  id="departments">
+                <div class="side-bar-main-headings">ROLE/USER MANAGEMENT</div>
+
+                <a class="roles-fixed link" href="roles.html"><div class="roles-side-bar">
+                    <div class="dashboard-1 ">
+                        <div><img class="all-img" src="../Assets/Images/Roles.svg"></div>
+                        <div  class="all-heading all-heading-diff">Roles</div>
+                        <div><img class="all-arrow all-arrow-up" src="../Assets/Images/arrow.png"> </div>
+                    </div>
+                    <div  class="red-side-bar red-side-bar-diff2"></div>
+                </div></a>
+
+                <div class="emp-main">
+                    <div class="dashboard general">
+                        <div><img class="all-img" src="../Assets/Images/assign user.svg"></div>
+                        <div class="all-heading">Access rights</div>
+                        <div><img class="all-arrow all-arrow-spcl" src="../Assets/Images/arrow.png"> </div>
+                    </div>
+                    <div class="red-side-bar"></div>
+                    </div>
+            </div>
+           
+            <div class="box" id="box">
+                <div class="box-main-head">Install new update 2.3.1A</div>
+                 <div class="box-head-desc">Allow to launch the new update</div>
+                 <div class="box-head-desc">for the AD Application</div>
+                 <button class="btn-dismiss">Dismiss</button>
+                 <button class="btn-accept">Accept</button>
+            </div>
+        
+              
+        </div>
+
+        <button onclick="hideSideBar('role_details')" class="handle-img-box" id="handle-img-box"> <img class="handle-img" id="handle-img"
+            src="../Assets/Images/handle.png"></button>
+
+        <div id="new-bar" class="hidden-side-bar d-none" >
+                <div><img class="logo-img-new" src="../Assets/Images/TezoLogoUpdated.png" alt="Tezo_logo"></div>
+                <div><img class="all-img-new" src="../Assets/Images/Dashboard.svg"></div>
+                <div><img class="all-img-new" src="../Assets/Images/Employees.svg"></div>
+                <div><a href="roleDetailes.html"><img class="all-img-new" src="../Assets/Images/Roles.svg"></a></div>
+                <div><img class="all-img-new" src="../Assets/Images/assign user.svg"></div>
+        </div>
+
+
+         <!-- Search bar  -->
+         <!-- the wrap is the conatiner to wrap remaing part -->
+
+        <div class="hide-and-open" id="wrap">
+        <div class="search-bar" id="search-bar">   
+        <div class="search-icon"><img class="search-icon-img" src="../Assets/Images/bx-search.png"></div>
+        <div class="search-heading">Search</div>
+        <div ><img class="search-bar-icons" src="../Assets/Images/IconButton.png"></div>
+        <div ><img class="search-bar-icons"  src="../Assets/Images/icon1.png"></div>
+        <div ><img class="search-bar-icons" src="../Assets/Images/icon2.png"></div>
+        <div ><img class="search-bar-icons" src="../Assets/Images/icon3.png"></div>
+        <div class="user-login">
+            <div><img class="user-img" src="../Assets/Images/John-Abraham-2.png"></div>
+            <div class="admin-name"><div class="admin"
+                >John Abraham</div><div class="admin-title">Admin</div></div>
+            <!-- <div class="arw-dwn"><i class="fa-solid fa-angle-down"></i></div> -->
+            <div >
+                <select class="arw-dwn">
+                    
+                  </select>
+            </div>
+        </div>    
+        </div>
+
+        <div class="employess-section" id="employess-section">
+            <div class="employess-section-up"><div class="employee-desc">
+                <div class="employee-desc-heading"><a href="roles.html"> Roles</a> <img class="all-arrow" src="../Assets/Images/arrow.png">   <a  href="index.html"> Employees</a> </div>
+               <div class="employee-desc-desc">All the roles are configured here.</div> 
+            </div>
+            <div> <button class="add-employee-btn" onclick="openAddEmployeePage()"><i class="fa-solid fa-plus"></i> ADD EMPLOYEE</button></div></div>
+            <div class="role-desc-heading">Role Description</div>
+            <div class="role-desc">Configure the providers that are available to users when they sign in. 
+                Configure the providers that are available to users when they sign in. 
+                Configure the providers that are available to users when they sign in. 
+                Configure the providers that are available to users when they sign in. 
+                Configure the providers that are available to users when they sign in.
+            </div>
+        </div>
+
+        <div class="emp-roles" id="emp-roles">
+            <div class="emp-roles-upper">
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/men-modified.png"> </div>
+                                <div> <div class="emp-name">Edgar Jones </div><div class="emp-email">Head of Product Design</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF122</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">adamk@yahoo.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Technology</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Stocktown, New Hampshire</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/female-modified.png"> </div>
+                                <div> <div class="emp-name">Marvin McKinney </div><div class="emp-email">Head of Engineering</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF150</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">sravani@yahoo.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Admin</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Syracuse, Connecticut</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/men-modified.png"> </div>
+                                <div> <div class="emp-name">Eleanor Pena </div><div class="emp-email">Senior Interaction Designer</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF240</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">grolschie@yahoo.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Customer Executive</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Portland, Illinois</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="emp-roles-lower">
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/female-modified.png"> </div>
+                                <div> <div class="emp-name">Jane Cooper </div><div class="emp-email">Product Analyst</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF389</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">chronos@aol.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Product</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Coppell, Virginia</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/men-modified.png"> </div>
+                                <div> <div class="emp-name">Floyd Miles </div><div class="emp-email">Visual Designer</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF209</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">gdatwood@msn.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Customer Executive</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Lansing, Illinois</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+                <div class="emp-roles-desc">
+                    <div class="emp-one">
+                        <div class="emp-details-box"> 
+                                <div ><img class="emp-img" src="../Assets/Images/female-modified.png"> </div>
+                                <div> <div class="emp-name">Dianne Russell </div><div class="emp-email">Full Stack Software Engineeri</div></div>
+                        </div>
+                        <div class="emp-info" ><div><img class="location-img" src="../Assets/Images/vector-1.svg"></div><div class="location">INF922</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img"  src="../Assets/Images/email-1_svgrepo.com.svg"></div><div class="location">kspiteri@live.com</div>  </div>
+                        <div  class="emp-info" ><div><img class="location-img" src="../Assets/Images/team_svgrepo.com.svg"></div><div class="location">Human Research</div> </div>
+                        <div  class="emp-info"><div><img class="location-img"  src="../Assets/Images/location-pin-alt-1_svgrepo.com.svg"></div><div class="location">Corona, Michigan</div></div>
+                        <div class="view"><div class="view-heading" >View </div><div><img class="arrow-vector" src="../Assets/Images/vector-2.svg"> </div> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+   
+    
+
+
+ 
+</body>
+</html>
